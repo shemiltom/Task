@@ -26,6 +26,7 @@ public class TaskManagementSystem {
                     taskManager.viewTasks();
                     break;
                 case 3:
+                    taskManager.viewTasks();
                     System.out.print("Enter the number of the task to mark as complete: ");
                     int taskIndex = scanner.nextInt();
                     taskManager.markAsComplete(taskIndex);
