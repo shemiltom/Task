@@ -49,4 +49,13 @@ class TaskManager {
             System.out.println("Task marked as complete!");
         }
     }
+    public void deleteTask(int taskdelIndex){
+        if (taskdelIndex < 1 || taskdelIndex > tasks.size()) {
+            System.out.println("Invalid task index.");
+        }else{
+            Task task=tasks.remove(taskdelIndex-1);
+            System.out.println("Task removed successfully");
+        }
+
+    }
 }
