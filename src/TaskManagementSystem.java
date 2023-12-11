@@ -22,7 +22,7 @@ public class TaskManagementSystem {
                     case 1:
                         System.out.print("Enter task description: ");
                         scanner.nextLine();
-                        String taskDescription = scanner.nextLine();
+                        String taskDescription = scanner.nextLine().trim();
                         taskManager.addTask(taskDescription);
                         break;
                     case 2:
